@@ -1,1 +1,10 @@
-
+html{
+    font-family: Comic Sans MS;
+    background-image: url(../img/fon.png);
+    background-size: cover;
+}
+.text{
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
