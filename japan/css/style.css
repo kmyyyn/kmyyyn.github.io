@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 html{
     font-family: Comic Sans MS;
     background-image: url(../img/fon.png);
     background-size: cover;
+    background-attachment: fixed; 
 }
 .text{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
+}
+
+.allnav a{
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 20px;
+    background-color: rgba(177, 127, 180, 0.0);
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+    transition: 0.6s;
+    font-family: 'Pacifico';
+    text-shadow: 4px 4px 2px gray;
+}
+.allnav{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+   
+}
+.allnav a:hover{
+    padding: 5px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: white;
+    text-shadow: 4px 4px 2px lightgray;
 }
