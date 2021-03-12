@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@font-face{
+    font-family: "Fedor";
+    src: url(../font/FedorovskUnicode.otf);
+}
 html{
-    font-family: Comic Sans MS;
     background-image: url(../img/fon.png);
     background-size: cover;
     background-attachment: fixed; 
 }
 .text{
+    font-family: Fedor;
     text-align: center;
     text-shadow: white 1px 1px 0, white -1px -1px 0, 
     white -1px 1px 0, white 1px -1px 0;
