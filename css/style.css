@@ -1,32 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 html{
     background-image: url(../img/konosuba.jpg);
-    font-family: Comic Sans MS;
-    background-image: url(../img/fon.png);
     background-size: cover;
     background-attachment: fixed; 
-}
-.text{
     text-align: center;
     font-size: 0px;
-    text-shadow: 4px 4px 2px white;
-    padding: 10px;
 }
-
 .allnav a{
     display: inline-block;
     padding: 20px 15px;
-@@ -19,7 +24,8 @@ html{
+    font-size: 20px;
+    background-color: rgba(177, 127, 180, 0.0);
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+    transition: 0.6s;
+    font-family: 'Pacifico';
     text-shadow: 4px 4px 2px gray;
 }
 .allnav{
     background-color: rgba(177, 127, 180, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
 
 }
 .allnav a:hover{
-@@ -29,99 +35,3 @@ html{
+    padding: 5px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     color: white;
     text-shadow: 4px 4px 2px lightgray;
 }
@@ -125,4 +124,4 @@ Article{
     margin-top: 40px;
     width: 1280px;
     height: 720px;
-} 
+}
