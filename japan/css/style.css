@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @font-face{
     font-family: "Fedor";
-    src: url(../font/FedorovskUnicode.otf);
+    src: url(../font/18144.ttf);
 }
 html{
     background-image: url(../img/fon.png);
@@ -14,6 +14,7 @@ html{
     text-shadow: white 1px 1px 0, white -1px -1px 0, 
     white -1px 1px 0, white 1px -1px 0;
     padding: 10px;
+    margin: 0px 20%;
 }
 
 .allnav a{
@@ -39,4 +40,25 @@ html{
     border-bottom: 1px solid black;
     color: white;
     text-shadow: 4px 4px 2px lightgray;
+}
+article{
+    margin: 2% 0px 0px 0px;
+    display: block;
+    width: 70%;
+}
+.up{
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: rgba(63, 63, 63, 0.438)
+    transition: 0.5s;
+}
+.up:hover{
+    background-color: rgba(182, 182, 182, 0.8);
+    color: white;
 }
