@@ -55,10 +55,19 @@ article{
     text-decoration: none;
     padding: 10px;
     color: black;
-    background-color: rgba(63, 63, 63, 0.438)
+    background-color: rgba(63, 63, 63, 0.438);
     transition: 0.5s;
 }
 .up:hover{
     background-color: rgba(182, 182, 182, 0.8);
     color: white;
+}
+.hor{
+    position: fixed;
+    right: 40px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: rgba(63, 63, 63, 0.438);
 }
