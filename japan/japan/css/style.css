@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@font-face{
+    font-family: "Fedor";
+    src: url(../font/18144.ttf);
+}
+html{
+    background-image: url(../img/fon.png);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.text{
+    font-family: Fedor;
+    text-align: center;
+    text-shadow: white 1px 1px 0, white -1px -1px 0, 
+    white -1px 1px 0, white 1px -1px 0;
+    padding: 10px;
+    margin: 0px 20%;
+}
+
+.allnav a{
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 21px;
+    background-color: rgba(177, 127, 180, 0.0);
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+    transition: 0.1s;
+    font-family: 'Pacifico';
+    text-shadow: 4px 4px 2px gray;
+    height: auto;
+}
+.allnav{
+    background: linear-gradient(to right, rgba(219, 95, 157, 0.842), rgba(158, 156, 156, 0.438));
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 30px;
+}
+.allnav a:hover{
+    padding: 5px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: white;
+    text-shadow: 4px 4px 2px lightgray;
+}
+article{
+    margin: 2% 0px 0px 0px;
+    display: block;
+    width: 70%;
+}
+.up{
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 12%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    transition: 0.5s;
+    background: linear-gradient(to right, rgba(219, 95, 157, 0.842), rgba(158, 156, 156, 0.438));
+}
+.up:hover{
+    background-color: rgba(182, 182, 182, 0.8);
+    color: white;
+}
+.chapter{
+    position: fixed;
+    left: 70%;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.829); 
+    margin-top: 30px;
+    width: 25%;
+    height: 70%;
+    border: solid 1px black;
+    border-radius: 25px;
+    background-image: url(../img/chapter.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.chapter a{
+    text-decoration: none;
+    color: black;    
+    font-size: 20px; 
+}
+.chapter li{
+    margin-top: 30px;
+}
