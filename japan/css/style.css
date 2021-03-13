@@ -11,8 +11,6 @@ html{
 .text{
     font-family: Fedor;
     text-align: center;
-    text-shadow: white 1px 1px 0, white -1px -1px 0, 
-    white -1px 1px 0, white 1px -1px 0;
     padding: 10px;
     margin: 0px 20%;
 }
