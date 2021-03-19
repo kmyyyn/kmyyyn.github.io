@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-@font-face{
+
+@font-face {
     font-family: "Fedor";
-    src: url(../font/18144.ttf);
+    src: url(font/18144.ttf);
 }
-html{
-    background-image: url(../img/fon.png);
+
+html {
+    background-image: url(../img/background.png);
     background-size: cover;
     background-attachment: fixed; 
 }
-.text{
-    font-family: Fedor;
+a {
+    text-decoration: none;
+}
+
+.headerNav {
     text-align: center;
-    padding: 10px;
-    margin: 0px 20%;
+    border: solid 1px black;
+    border-radius: 30px;
+}
+
+.headerNav a:hover {
+    padding: 5px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     color: white;
 }
 
-.allnav a{
+.headerNav a {
     display: inline-block;
     padding: 20px 15px;
     font-size: 21px;
@@ -27,65 +38,81 @@ html{
     transition: 0.1s;
     font-family: 'Pacifico';
 }
-.allnav{
-    background-image: url(../img/header.png);
-    text-align: center;
-    border: solid 1px black;
-    border-radius: 30px;
-}
-.allnav a:hover{
-    padding: 5px 15px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+
+.main {
+    height: auto;
+    min-height: calc(100% + 100px);
+    
+    display: grid;
+    
+    grid-template-areas: 
+    "header header header"
+    "content img nav"
+    "footer footer footer";
+    
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 700px minmax(500px, 1fr) 500px;
+    
+    grid-gap: 10px;
     color: white;
 }
-article{
-    margin: 0px;
-    margin-right: 0px;
-    display: block;
-    width: 30%;
+
+header {
+    grid-area: header;
+    padding-top: 10px;
 }
-.up{
-    font-size: 100%;
-    position: fixed;
-    bottom: 5%;
-    right: 12%;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-decoration: none;
+
+.content { 
+    grid-area: content;
+}
+
+.nav { 
+    grid-area: nav;
+/*    background-color: gold;*/
     padding: 10px;
-    color: black;
-    transition: 0.5s;
-    background: linear-gradient(to right, rgba(219, 95, 157, 0.842), rgba(158, 156, 156, 0.438));
 }
-.up:hover{
-    background: linear-gradient(to right, rgba(158, 156, 156, 0.438), rgba(219, 95, 157, 0.842));
+
+footer {
+    grid-area: footer;
+}
+
+.post {
+    height: 200px;
     color: white;
+    margin-bottom: 10px;
+    
+    display: grid;
+    grid-template-areas: "post-img post-text";
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
 }
-.chapter{
-    top: 7%;
-    position: fixed;
-    right: 5%;
-    text-decoration: none;
+
+.post:hover {
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 50ms;
+    
+    width: calc(100% + 20px);
+    height: 220px;
+}
+
+.post-img {
+    grid-area: post-img;
+    height: inherit;
+    max-width: inherit;
+}
+
+.post-text {
+    grid-area: post-text;
+    word-break: keep-all;
     padding: 10px;
-    color: black;
-    background: linear-gradient(to right, rgba(182, 15, 15, 0.842), rgba(158, 156, 156, 0.438));
-    margin-top: 30px;
-    width: 20%;
-    height: 75%;
-    border: solid 1px black;
-    border-radius: 25px;
-    background-size: cover;
-    background-attachment: fixed; 
-}
-.chapter a{
-    text-decoration: none;
-    color: black;    
-    font-size: 20px; 
-}
-.chapter li{
-    margin-top: 30px;
-}
-.image{
+    
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 80px;
 }
